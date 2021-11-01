@@ -1,0 +1,381 @@
+body{
+background: rgba(255, 253, 253, 0.911);
+box-sizing: border-box;
+margin: 0%;
+padding: 0%;
+
+
+}
+
+header{
+    top: 0;
+    background: rgb(232, 117, 236);
+    width: 100%;
+    height: 6em;
+   
+    
+}
+
+h1{
+    display: inline-block;
+    margin-left: 35% ;
+    margin-top:3%;
+    font-size: 35px;
+    text-shadow: 2px 2px 10px white;
+
+    
+}
+
+.house-menu{
+    position: fixed;
+    top: 6em;
+    width: 50%;
+    height: 200px;
+
+}
+
+.house-logo{
+   position: absolute;
+   top: -4em;
+   left: 1em;
+   width: 2em;
+   height: 2em;
+   
+}
+
+
+
+input{
+    display: none;
+}
+
+
+.menu{
+    
+    overflow: hidden;
+    margin-left: -90%;
+    width: 9em;
+    height: 0.5em;
+    background-image:linear-gradient(to bottom right,  rgb(248, 132, 252) , white); 
+    font-family: sans-serif;
+    border-radius: 20%;
+    transition-duration: 1s;
+    z-index: 90;
+    
+}
+
+.menu ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding:0%;
+}
+
+li{
+    border-bottom: solid 1px whitesmoke;
+    padding-top: 1em;
+    text-align: center;
+    padding:10px;
+    color: black;
+   
+}
+    
+.menu ul li a{
+    text-decoration: none;
+
+}
+
+
+#button:checked ~ .menu{
+    display: flex;
+     top: 5.9em;
+     margin-left: 0%;
+     height: 12em;
+     border-radius: 0% 5% 30%;
+    
+     
+}
+
+#sacar:checked ~ body{
+     display: none;
+}
+/* Aca termina el header */
+
+
+.slider{
+    
+    margin-top: -3%;
+    overflow: hidden;
+    
+}
+  
+  
+.slider ul {
+      animation:cambio 25s infinite alternate;
+}
+  
+.slider ul{
+      
+      width: 1000%;
+      display: flex;
+      padding: 0%;
+      animation: cambio 35s infinite alternate;
+      
+      
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+   
+}
+
+.slider ul li img{
+
+width: 100%;
+height: 80vh;
+border-radius: 20px;
+}
+
+@keyframes cambio{
+
+    0%{
+        margin-left: 0%;
+    }
+    10%{
+        margin-left: -100%;
+    }
+
+    20%{
+        margin-left: -200%;
+    }
+
+    30%{
+        margin-left: -300%;
+    }
+    40%{margin-left: -400%;}
+    50%{
+        margin-left: -500%;
+    }
+    60%{margin-left: -600%;}
+    70%{margin-left: -700%;}
+    80%{
+        margin-left: -800%;
+    }
+    100%{margin-left: -900%;}
+    
+    
+}
+
+/*aca termina imagenes*/
+
+
+
+.linea{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3em;
+    width: 90%;
+    height: 1px;
+    background-color: rgb(238, 46, 222);
+}
+
+
+
+/*info*/
+#box-info{
+    margin-top: 1em;
+    margin-bottom: 3em;
+}
+
+h2{
+    font-size: 20px;
+    text-align: center;
+    background-color:rgb(255, 219, 219) ;
+}
+
+#box-info  h2 img{
+    width: 1em;
+    height: 1em;
+    margin-top: 5px;
+}
+
+#box-info section ul{
+    padding: 0%;
+    margin-top: -1%;
+    
+}
+ 
+#box-info section ul li{
+   list-style-image: url(assets/logos/icolila.ico);
+   width: 65%;
+   margin: auto;
+   margin-top: 0.5em;
+   text-align: start;
+  color: black;
+   
+}
+
+.info{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(255, 219, 219);
+    border-radius: 5px;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-size: 16px;
+
+}
+
+/*contacto y redes*/
+h3{
+    font-size: 20px;
+    text-align: center;
+    background-color:rgb(255, 219, 219) ;
+}
+
+
+#box-contact-redes{
+    margin-bottom: 3em;
+   
+}
+
+.imagen{
+    margin-left: 25%;
+}
+
+.face{
+    margin-top: 1em;
+
+}
+
+#box-contact-redes .imagen a{
+    text-decoration: none;
+}
+
+#box-contact-redes .con{
+    font-size: 18px;
+    color: indigo;
+    margin-top: -1.5em;
+    margin-left: 18%;
+   
+
+}
+
+
+
+
+/*ubicacion*/
+h4{
+    font-size: 20px;
+    text-align: center;
+    background-color:rgb(255, 219, 219) ;
+}
+
+#box-ubi a{
+    text-decoration: none;
+    color: indigo;
+}
+
+#box-ubi a img{
+    margin-right: 1em;
+}
+
+#box-ubi .ubication{
+    text-decoration: none;
+    margin-top: 1em;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid rgb(238, 46, 222);
+    
+}
+
+#box-ubi p{
+    
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-family: sans-serif;
+    
+}
+
+
+/*pie de pagina*/
+footer{
+    background: rgb(230, 74, 159);
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    margin-top: 3em;
+    border-top: 2px solid rgb(230, 20, 230);
+    
+}
+
+h5{
+color: rgb(51, 51, 51);
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+
+    flex-grow: 1;
+    
+}
+
+footer a p{
+    margin-top: 0;
+    margin-right: 1em;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer a img{
+    width: 1.5em;
+    height: 1.5em;
+    margin-top: 0.6em;
+    margin-left: 10%;
+}
+/*aca termina mobile*/
+
+
+/*comienzo media query*/
+@media (min-width:420px) and (min-height:320px){
+
+    .house-logo:hover{
+        background: rgb(240, 165, 240);
+    }
+
+    .menu ul li:hover{
+        background: rgb(240, 165, 240);
+
+    }
+
+
+    .slider{
+        
+        width: 70%;
+        margin-top: 0%;
+        margin-right: auto;
+        margin-left: auto;
+        border-radius: 5%;
+    }
+
+    .imagen img:hover{
+        background: rgb(240, 165, 240);
+    }
+
+    footer h5{
+        margin-right: 10%;
+    }
+
+    footer img:hover{
+        background: rgb(240, 165, 240);
+
+    }
+
+
+
+}
